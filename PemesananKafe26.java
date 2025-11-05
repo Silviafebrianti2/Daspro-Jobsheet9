@@ -6,7 +6,7 @@ public class PemesananKafe26 {
 
         System.out.print("Masukkan jumlah pesanan: ");
         int jumlah = sc.nextInt();
-        sc.nextLine(); // membersihkan buffer
+        sc.nextLine(); 
 
         String[] namaPesanan = new String[jumlah];
         double[] hargaPesanan = new double[jumlah];
@@ -26,6 +26,7 @@ public class PemesananKafe26 {
             totalBiaya += hargaPesanan[i];
         }
 
+        // Tampilkan hasil
         System.out.println("\n=== DAFTAR PESANAN KAFE ===");
         for (int i = 0; i < jumlah; i++) {
             System.out.println((i + 1) + ". " + namaPesanan[i] + " - Rp " + hargaPesanan[i]);
